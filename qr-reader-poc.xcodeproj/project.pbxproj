@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D4DEDB31CDD176100D1996C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4DEDB21CDD176100D1996C /* SecondViewController.swift */; };
 		F314859B1CDBC1E400B21102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314859A1CDBC1E400B21102 /* AppDelegate.swift */; };
 		F314859D1CDBC1E400B21102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314859C1CDBC1E400B21102 /* ViewController.swift */; };
 		F31485A01CDBC1E400B21102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F314859E1CDBC1E400B21102 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D4DEDB21CDD176100D1996C /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F31485971CDBC1E400B21102 /* qr-reader-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "qr-reader-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F314859A1CDBC1E400B21102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F314859C1CDBC1E400B21102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				F314859A1CDBC1E400B21102 /* AppDelegate.swift */,
 				F314859C1CDBC1E400B21102 /* ViewController.swift */,
+				9D4DEDB21CDD176100D1996C /* SecondViewController.swift */,
 				F314859E1CDBC1E400B21102 /* Main.storyboard */,
 				F31485A11CDBC1E400B21102 /* Assets.xcassets */,
 				F31485A31CDBC1E400B21102 /* LaunchScreen.storyboard */,
@@ -195,7 +198,7 @@
 				TargetAttributes = {
 					F31485961CDBC1E400B21102 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = JKES54HFV4;
+						DevelopmentTeam = 8EJK967ME7;
 					};
 					F31485AA1CDBC1E500B21102 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D4DEDB31CDD176100D1996C /* SecondViewController.swift in Sources */,
 				F314859D1CDBC1E400B21102 /* ViewController.swift in Sources */,
 				F314859B1CDBC1E400B21102 /* AppDelegate.swift in Sources */,
 			);
@@ -407,7 +411,7 @@
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-reader-poc";
+				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-shit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -423,7 +427,7 @@
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-reader-poc";
+				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-shit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,6 +499,7 @@
 				F31485C11CDBC1E500B21102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F31485C21CDBC1E500B21102 /* Build configuration list for PBXNativeTarget "qr-reader-pocTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				F31485C41CDBC1E500B21102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F31485C51CDBC1E500B21102 /* Build configuration list for PBXNativeTarget "qr-reader-pocUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +517,7 @@
 				F31485C71CDBC1E500B21102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

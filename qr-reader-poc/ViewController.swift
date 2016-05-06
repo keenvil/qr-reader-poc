@@ -73,12 +73,16 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       print(error)
       return
     }
-    
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(true)
+
   }
   
   func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
@@ -97,16 +101,29 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     // Instead of hardcoding the AVMetadataObjectTypeQRCode, we check if the type
     // can be found in the array of supported bar codes.
     if supportedBarCodes.contains(metadataObj.type) {
-      //        if metadataObj.type == AVMetadataObjectTypeQRCode {
+      // if metadataObj.type == AVMetadataObjectTypeQRCode {
       // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
       let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj)
       qrCodeFrameView?.frame = barCodeObject!.bounds
       
       if metadataObj.stringValue != nil {
         print(metadataObj.stringValue)
-        messageLabel.text = metadataObj.stringValue
+        //messageLabel.text = metadataObj.stringValue
+        findProfile(metadataObj.stringValue)
       }
     }
+  }
+  
+  func findProfile(profileHash: String!) {
+    let pieces = profileHash.componentsSeparatedByString("/userid:")
+    let userID = pieces[1]
+    let hash = pieces[0]
+  
+    print(userID)
+    print(hash)
+    performSegueWithIdentifier("second", sender: self)
+    //let secondViewController:SecondViewController = SecondViewController()
+    //self.presentViewController(secondViewController, animated: true, completion: nil)
   }
 }
 
