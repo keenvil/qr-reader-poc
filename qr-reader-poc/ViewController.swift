@@ -20,6 +20,9 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   // Added to support different barcodes
   let supportedBarCodes = [AVMetadataObjectTypeQRCode]
   
+  var userID = ""
+  var userHash = ""
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -108,7 +111,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       qrCodeFrameView?.frame = barCodeObject!.bounds
       
       if metadataObj.stringValue != nil {
-        print(metadataObj.stringValue)
+        //print(metadataObj.stringValue)
         //messageLabel.text = metadataObj.stringValue
         findProfile(metadataObj.stringValue)
       }
@@ -118,15 +121,20 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   func findProfile(profileHash: String!) {
     let pieces = profileHash.componentsSeparatedByString("/userid:")
     if pieces.count == 2 {
-      let userID = pieces[1]
-      let hash = pieces[0]
-    
-      print("User ID:\(userID)")
-      print("Hash:\(hash)")
+      userID = pieces[1]
+      userHash = pieces[0]
+      self.captureSession!.stopRunning()
       performSegueWithIdentifier("second", sender: self)
     } else {
       messageLabel.text = "Unrecognized QR code"
     }
+  }
+  
+  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    // Create a new variable to store the instance of PlayerTableViewController
+    let userDetailController = segue.destinationViewController as! SecondViewController
+    userDetailController.userID = userID
+    userDetailController.userHash = userHash
   }
 }
 
