@@ -18,7 +18,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   var qrCodeFrameView:UIView?
   
   // Added to support different barcodes
-  let supportedBarCodes = [AVMetadataObjectTypeQRCode, AVMetadataObjectTypeCode128Code, AVMetadataObjectTypeCode39Code, AVMetadataObjectTypeCode93Code, AVMetadataObjectTypeUPCECode, AVMetadataObjectTypePDF417Code, AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeAztecCode]
+  let supportedBarCodes = [AVMetadataObjectTypeQRCode]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -71,6 +71,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     } catch {
       // If any error occurs, simply print it out and don't continue any more.
       print(error)
+      messageLabel.text = "Unrecognized QR code"
       return
     }
   }
@@ -116,14 +117,16 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   
   func findProfile(profileHash: String!) {
     let pieces = profileHash.componentsSeparatedByString("/userid:")
-    let userID = pieces[1]
-    let hash = pieces[0]
-  
-    print(userID)
-    print(hash)
-    performSegueWithIdentifier("second", sender: self)
-    //let secondViewController:SecondViewController = SecondViewController()
-    //self.presentViewController(secondViewController, animated: true, completion: nil)
+    if pieces.count == 2 {
+      let userID = pieces[1]
+      let hash = pieces[0]
+    
+      print("User ID:\(userID)")
+      print("Hash:\(hash)")
+      performSegueWithIdentifier("second", sender: self)
+    } else {
+      messageLabel.text = "Unrecognized QR code"
+    }
   }
 }
 
