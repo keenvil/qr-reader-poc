@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import AVFoundation
-import Alamofire
 
 class SecondViewController: UIViewController {
  
@@ -18,29 +17,25 @@ class SecondViewController: UIViewController {
   @IBOutlet weak var genderLabel: UILabel!
   @IBOutlet weak var documentLabel: UILabel!
   
-  var userID = ""
-  var userHash = ""
+  var userData: [String] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
+
     
-    Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-      .responseJSON { response in
-        print(response.result)   // result of response serialization
-        
-        if let JSON = response.result.value {
-          print("JSON: \(JSON)")
-        }
-    }
-    
-    print("DETAIL UserID: " + userID)
-    print("DETAIL UserHash: " + userHash)
-    
+    self.firstNameLabel.text = userData[1]
+    self.lastNameLabel.text = userData[2]
+    //self.genderLabel.text = gender
+    self.documentLabel.text = userData[4]
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
-    
+
+  @IBAction func cancel(sender: AnyObject) {
+    self.dismissViewControllerAnimated(false, completion: nil)
+  }
+
 }
 

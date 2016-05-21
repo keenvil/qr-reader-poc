@@ -18,13 +18,13 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   var qrCodeFrameView:UIView?
   
   // Added to support different barcodes
-  let supportedBarCodes = [AVMetadataObjectTypeQRCode]
+  let supportedBarCodes = [AVMetadataObjectTypePDF417Code]
   
-  var userID = ""
-  var userHash = ""
+  var userData: [String] = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
+        
     
     // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
     // as the media type parameter.
@@ -72,7 +72,6 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       }
       
     } catch {
-      // If any error occurs, simply print it out and don't continue any more.
       print(error)
       messageLabel.text = "Unrecognized QR code"
       return
@@ -81,7 +80,6 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
   
   override func viewDidAppear(animated: Bool) {
@@ -94,7 +92,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     // Check if the metadataObjects array is not nil and it contains at least one object.
     if metadataObjects == nil || metadataObjects.count == 0 {
       qrCodeFrameView?.frame = CGRectZero
-      messageLabel.text = "No barcode/QR code is detected"
+      messageLabel.text = "DNI no reconocido"
       return
     }
     
@@ -111,30 +109,27 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       qrCodeFrameView?.frame = barCodeObject!.bounds
       
       if metadataObj.stringValue != nil {
-        //print(metadataObj.stringValue)
-        //messageLabel.text = metadataObj.stringValue
-        findProfile(metadataObj.stringValue)
+        showUser(metadataObj.stringValue)
       }
     }
   }
   
-  func findProfile(profileHash: String!) {
-    let pieces = profileHash.componentsSeparatedByString("/userid:")
-    if pieces.count == 2 {
-      userID = pieces[1]
-      userHash = pieces[0]
-      self.captureSession!.stopRunning()
-      performSegueWithIdentifier("second", sender: self)
-    } else {
-      messageLabel.text = "Unrecognized QR code"
-    }
+  func showUser(encodedUserData: String!) {
+    userData = extractUserData(encodedUserData)
+    messageLabel.text = "DNI reconocido: " + userData[1]
+    self.captureSession!.stopRunning()
+    performSegueWithIdentifier("second", sender: self)
+    
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-    // Create a new variable to store the instance of PlayerTableViewController
     let userDetailController = segue.destinationViewController as! SecondViewController
-    userDetailController.userID = userID
-    userDetailController.userHash = userHash
+    userDetailController.userData = userData
   }
+  
+  func extractUserData(encodedUserData: String) -> [String] {
+    return encodedUserData.characters.split{$0 == "@"}.map(String.init)
+  }
+
 }
 

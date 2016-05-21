@@ -6,7 +6,7 @@ target 'qr-reader-poc' do
   use_frameworks!
 
   # Pods for qr-reader-poc
-  pod 'Alamofire', '~> 3.4'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 
   target 'qr-reader-pocTests' do
     inherit! :search_paths
