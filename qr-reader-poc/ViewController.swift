@@ -122,6 +122,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   }
   
   func showUser(encodedUserData: String!) {
+    print(encodedUserData)
     userData = extractUserData(encodedUserData)
     
     if (userData.count >= 9) {

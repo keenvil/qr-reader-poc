@@ -27,16 +27,20 @@ class SecondViewController: UIViewController {
   @IBOutlet weak var lastNameLabel: UILabel!
   @IBOutlet weak var genderLabel: UILabel!
   @IBOutlet weak var documentLabel: UILabel!
+  @IBOutlet weak var avatarImage: UIImageView!
   
-  var userData: [String] = []
+  var userData: [String] = ["", "Abait", "Esteban Sait", "F", "30650388"]
   
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    self.lastNameLabel.text = isLatestDocumentSchema() ? userData[1] : userData[3]
-    self.firstNameLabel.text = isLatestDocumentSchema() ? userData[2] : userData[4]
-    self.genderLabel.text = getGender()
-    self.documentLabel.text = isLatestDocumentSchema() ? userData[4] : userData[0]
+    lastNameLabel.text = isLatestDocumentSchema() ? userData[1] : userData[3]
+    firstNameLabel.text = isLatestDocumentSchema() ? userData[2] : userData[4]
+    genderLabel.text = getGender()
+    documentLabel.text = isLatestDocumentSchema() ? userData[4] : userData[0]
+    
+    avatarImage.layer.borderWidth = 4
+    avatarImage.layer.borderColor = UIColor.whiteColor().CGColor
   }
   
   override func didReceiveMemoryWarning() {
@@ -44,7 +48,7 @@ class SecondViewController: UIViewController {
   }
 
   @IBAction func cancel(sender: AnyObject) {
-    self.dismissViewControllerAnimated(false, completion: nil)
+    dismissViewControllerAnimated(false, completion: nil)
   }
   
   func isLatestDocumentSchema() -> Bool {
