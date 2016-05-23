@@ -172,7 +172,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5ht-sO-mfo">
-                        <barButtonItem key="leftBarButtonItem" title="Volver" id="KNp-NV-VDU">
+                        <barButtonItem key="rightBarButtonItem" title="Volver" id="KNp-NV-VDU">
                             <connections>
                                 <action selector="cancel:" destination="7iP-Ke-PuU" id="IWD-2W-e4b"/>
                             </connections>

@@ -124,12 +124,11 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   func showUser(encodedUserData: String!) {
     userData = extractUserData(encodedUserData)
     
-    print(userData.count)
-    
-    messageLabel.text = "DNI reconocido: " + userData[1]
-    stopVideoCapturing()
-    performSegueWithIdentifier("second", sender: self)
-    
+    if (userData.count >= 9) {
+      messageLabel.text = "DNI reconocido: " + userData[1]
+      stopVideoCapturing()
+      performSegueWithIdentifier("second", sender: self)
+    }
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
