@@ -22,13 +22,13 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   
   var userData: [String] = []
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
-        
-    
+  
+  override func viewWillAppear(animated: Bool) {
     // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
     // as the media type parameter.
     let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    
+    messageLabel.text = "Detectando DNI"
     
     do {
       // Get an instance of the AVCaptureDeviceInput class using the previous device object.
@@ -114,16 +114,28 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     }
   }
   
+  func stopVideoCapturing() {
+    self.captureSession?.stopRunning()
+    self.videoPreviewLayer?.removeFromSuperlayer()
+    self.videoPreviewLayer = nil;
+    self.captureSession = nil;
+  }
+  
   func showUser(encodedUserData: String!) {
     userData = extractUserData(encodedUserData)
+    
+    print(userData.count)
+    
     messageLabel.text = "DNI reconocido: " + userData[1]
-    self.captureSession!.stopRunning()
+    stopVideoCapturing()
     performSegueWithIdentifier("second", sender: self)
     
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-    let userDetailController = segue.destinationViewController as! SecondViewController
+    let navigationController = segue.destinationViewController as! UINavigationController
+    
+    let userDetailController = navigationController.topViewController as! SecondViewController
     userDetailController.userData = userData
   }
   

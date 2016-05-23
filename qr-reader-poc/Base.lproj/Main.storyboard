@@ -45,7 +45,7 @@
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="Zjg-HS-yOB" id="PPF-bK-eMb"/>
-                        <segue destination="7iP-Ke-PuU" kind="presentation" identifier="second" modalTransitionStyle="coverVertical" id="RR2-wB-4m4"/>
+                        <segue destination="uDJ-YD-RTP" kind="presentation" identifier="second" modalTransitionStyle="flipHorizontal" id="RR2-wB-4m4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -65,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcd-UR-FIh" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="40" y="40" width="450" height="29"/>
+                                <rect key="frame" x="40" y="84" width="450" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWE-ax-bVf" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="40" y="74" width="450" height="29"/>
+                                <rect key="frame" x="40" y="118" width="450" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -85,7 +85,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de Documento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-3H-CLq" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="40" y="206" width="450" height="29"/>
+                                <rect key="frame" x="40" y="250" width="450" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -95,7 +95,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxV-0k-Iss" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="40" y="123" width="450" height="29"/>
+                                <rect key="frame" x="40" y="167" width="450" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -105,7 +105,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGa-4i-Crj" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="40" y="157" width="450" height="29"/>
+                                <rect key="frame" x="40" y="201" width="450" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -115,9 +115,29 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZx-gD-Q7I" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="40" y="240" width="450" height="29"/>
+                                <rect key="frame" x="40" y="284" width="450" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-GJ-KLg" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="40" y="333" width="57" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.54901960780000003" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipm-YH-5N6" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="40" y="367" width="11" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.54901960780000003" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -129,6 +149,8 @@
                         <constraints>
                             <constraint firstItem="GWE-ax-bVf" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="01z-WP-fPP"/>
                             <constraint firstItem="mxV-0k-Iss" firstAttribute="width" secondItem="Wro-qf-ZSH" secondAttribute="width" multiplier="0.75" id="0KM-yQ-kb2"/>
+                            <constraint firstItem="ipm-YH-5N6" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="4Ak-IF-Pln"/>
+                            <constraint firstItem="5ow-GJ-KLg" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="A40-W1-Yn2"/>
                             <constraint firstItem="qcd-UR-FIh" firstAttribute="width" secondItem="Wro-qf-ZSH" secondAttribute="width" multiplier="0.75" id="GmX-dh-FK3"/>
                             <constraint firstItem="qcd-UR-FIh" firstAttribute="leading" secondItem="Wro-qf-ZSH" secondAttribute="leadingMargin" constant="20" id="TPz-LA-NOJ"/>
                             <constraint firstItem="dZx-gD-Q7I" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="UHq-EM-JoR"/>
@@ -141,21 +163,49 @@
                             <constraint firstItem="EGa-4i-Crj" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="jFk-Cj-vNj"/>
                             <constraint firstItem="qcd-UR-FIh" firstAttribute="top" secondItem="Yht-Jk-Sw2" secondAttribute="bottom" constant="20" id="o3v-5s-aOs"/>
                             <constraint firstItem="GWE-ax-bVf" firstAttribute="width" secondItem="Wro-qf-ZSH" secondAttribute="width" multiplier="0.75" id="snp-l3-lbP"/>
+                            <constraint firstItem="ipm-YH-5N6" firstAttribute="top" secondItem="5ow-GJ-KLg" secondAttribute="bottom" constant="5" id="swd-Rm-k3U"/>
                             <constraint firstItem="dZx-gD-Q7I" firstAttribute="width" secondItem="Wro-qf-ZSH" secondAttribute="width" multiplier="0.75" id="t8N-L7-RVM"/>
                             <constraint firstItem="EGa-4i-Crj" firstAttribute="width" secondItem="Wro-qf-ZSH" secondAttribute="width" multiplier="0.75" id="uib-AI-ruW"/>
                             <constraint firstItem="xFN-3H-CLq" firstAttribute="top" secondItem="EGa-4i-Crj" secondAttribute="bottom" constant="20" id="y39-p4-DU4"/>
                             <constraint firstItem="dZx-gD-Q7I" firstAttribute="top" secondItem="xFN-3H-CLq" secondAttribute="bottom" constant="5" id="zO2-Xa-2v8"/>
+                            <constraint firstItem="5ow-GJ-KLg" firstAttribute="top" secondItem="dZx-gD-Q7I" secondAttribute="bottom" constant="20" id="zcA-P7-ZkL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5ht-sO-mfo">
+                        <barButtonItem key="leftBarButtonItem" title="Volver" id="KNp-NV-VDU">
+                            <connections>
+                                <action selector="cancel:" destination="7iP-Ke-PuU" id="IWD-2W-e4b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="documentLabel" destination="dZx-gD-Q7I" id="Vw1-qJ-pVX"/>
                         <outlet property="firstNameLabel" destination="GWE-ax-bVf" id="ZP6-8Z-IbJ"/>
+                        <outlet property="genderLabel" destination="ipm-YH-5N6" id="UbM-NS-mUQ"/>
                         <outlet property="lastNameLabel" destination="EGa-4i-Crj" id="fFO-5a-E4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYV-QV-Lhx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005" y="350"/>
+            <point key="canvasLocation" x="1794" y="254"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kWd-aC-Lu5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uDJ-YD-RTP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aU3-q6-N2f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7iP-Ke-PuU" kind="relationship" relationship="rootViewController" id="LN9-En-aVO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q29-eD-eFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982" y="254"/>
         </scene>
     </scenes>
 </document>
