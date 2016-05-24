@@ -73,7 +73,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       
     } catch {
       print(error)
-      messageLabel.text = "Unrecognized QR code"
+      messageLabel.text = "Hubo un problema"
       return
     }
   }

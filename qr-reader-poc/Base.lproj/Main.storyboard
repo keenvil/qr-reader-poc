@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uDJ-YD-RTP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -77,14 +77,11 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="200" y="89" width="113.5" height="29"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWE-ax-bVf" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="300" y="123" width="9.5" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -93,9 +90,6 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="200" y="123" width="9.5" height="28"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de Documento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFN-3H-CLq" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="40" y="344" width="200" height="21.5"/>
@@ -109,9 +103,6 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="264" width="266.5" height="29"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxV-0k-Iss" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="300" y="171" width="115" height="29"/>
@@ -125,14 +116,11 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="200" y="171" width="115" height="29"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGa-4i-Crj" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="300" y="205" width="9.5" height="28"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -141,14 +129,11 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="200" y="205" width="9.5" height="28"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZx-gD-Q7I" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="40" y="370.5" width="7.5" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.95294117647058818" green="0.5490196078431373" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
@@ -157,9 +142,6 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="298" width="9.5" height="28"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-GJ-KLg" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="40" y="401.5" width="43" height="21.5"/>
@@ -173,12 +155,57 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="336" width="57" height="29"/>
-                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipm-YH-5N6" customClass="SpringLabel" customModule="Spring">
                                 <rect key="frame" x="40" y="428" width="7.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visita a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-Jw-Kse" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="300" y="172" width="115.5" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.54901960780000003" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lote 15A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpK-oS-XfT" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="300" y="172" width="115.5" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfP-Ph-Hfb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Volver">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="7iP-Ke-PuU" eventType="touchUpInside" id="dTq-6g-weW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invitación válida hasta mañana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6m-RZ-igS" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="300" y="172" width="115.5" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.95294117649999999" green="0.54901960780000003" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -189,9 +216,6 @@
                                         <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="370" width="9.5" height="28"/>
-                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="95h-qh-vDc" customClass="SpringImageView" customModule="Spring">
                                 <rect key="frame" x="40" y="84" width="240" height="240"/>
@@ -205,195 +229,105 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuR-sI-cbO">
-                                <rect key="frame" x="0.0" y="149.5" width="600" height="450"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visita a" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF2-Jw-Kse" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="300" y="172" width="115.5" height="29"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <real key="value" value="0.10000000000000001"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="20" y="18" width="83" height="29"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lote 15A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TpK-oS-XfT" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="300" y="172" width="115.5" height="29"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <real key="value" value="0.10000000000000001"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="20" y="100" width="96.5" height="28"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesualdo Bertolotti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywP-2A-4iy" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="300" y="206" width="11" height="29"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <real key="value" value="0.10000000000000001"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="20" y="52" width="208" height="28"/>
-                                        </variation>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79g-Xo-wGp">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="243" y="55" width="22" height="22"/>
-                                        </variation>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfP-Ph-Hfb">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Volver">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="cancel:" destination="7iP-Ke-PuU" eventType="touchUpInside" id="dTq-6g-weW"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invitación válida hasta mañana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6m-RZ-igS" customClass="SpringLabel" customModule="Spring">
-                                        <rect key="frame" x="300" y="172" width="115.5" height="29"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                <real key="value" value="0.10000000000000001"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="20" y="148" width="330" height="28"/>
-                                        </variation>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.11372549019607843" green="0.60392156862745094" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="ywP-2A-4iy" firstAttribute="leading" secondItem="OF2-Jw-Kse" secondAttribute="leading" id="6Gn-zw-aB0"/>
-                                    <constraint firstItem="f6m-RZ-igS" firstAttribute="top" secondItem="TpK-oS-XfT" secondAttribute="bottom" constant="20" id="9rv-Ko-GT0"/>
-                                    <constraint firstItem="ywP-2A-4iy" firstAttribute="top" secondItem="OF2-Jw-Kse" secondAttribute="bottom" constant="5" id="Lkc-Ot-5e3"/>
-                                    <constraint firstItem="79g-Xo-wGp" firstAttribute="leading" secondItem="ywP-2A-4iy" secondAttribute="trailing" constant="15" id="TJp-vk-wFd"/>
-                                    <constraint firstItem="TpK-oS-XfT" firstAttribute="leading" secondItem="OF2-Jw-Kse" secondAttribute="leading" id="WK3-3G-peU"/>
-                                    <constraint firstItem="UfP-Ph-Hfb" firstAttribute="centerX" secondItem="KuR-sI-cbO" secondAttribute="centerX" id="ZqM-8s-cvX"/>
-                                    <constraint firstItem="f6m-RZ-igS" firstAttribute="leading" secondItem="OF2-Jw-Kse" secondAttribute="leading" id="fxf-C9-rtC"/>
-                                    <constraint firstAttribute="bottom" secondItem="UfP-Ph-Hfb" secondAttribute="bottom" constant="20" id="jMn-nU-bp9"/>
-                                    <constraint firstItem="79g-Xo-wGp" firstAttribute="centerY" secondItem="ywP-2A-4iy" secondAttribute="centerY" id="jye-I5-jdn"/>
-                                    <constraint firstItem="TpK-oS-XfT" firstAttribute="top" secondItem="ywP-2A-4iy" secondAttribute="bottom" constant="20" id="nVJ-Li-RdC"/>
-                                    <constraint firstItem="OF2-Jw-Kse" firstAttribute="leading" secondItem="KuR-sI-cbO" secondAttribute="leading" constant="20" id="sUQ-ql-64t"/>
-                                    <constraint firstAttribute="width" secondItem="KuR-sI-cbO" secondAttribute="height" multiplier="4:3" id="tEf-nn-Rdd"/>
-                                    <constraint firstItem="OF2-Jw-Kse" firstAttribute="top" secondItem="KuR-sI-cbO" secondAttribute="top" constant="18" id="yUt-BR-ARW"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="OF2-Jw-Kse"/>
-                                        <exclude reference="TpK-oS-XfT"/>
-                                        <exclude reference="ywP-2A-4iy"/>
-                                        <exclude reference="79g-Xo-wGp"/>
-                                        <exclude reference="UfP-Ph-Hfb"/>
-                                        <exclude reference="f6m-RZ-igS"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="sUQ-ql-64t"/>
-                                        <exclude reference="yUt-BR-ARW"/>
-                                        <exclude reference="6Gn-zw-aB0"/>
-                                        <exclude reference="Lkc-Ot-5e3"/>
-                                        <exclude reference="WK3-3G-peU"/>
-                                        <exclude reference="nVJ-Li-RdC"/>
-                                        <exclude reference="9rv-Ko-GT0"/>
-                                        <exclude reference="fxf-C9-rtC"/>
-                                        <exclude reference="TJp-vk-wFd"/>
-                                        <exclude reference="jye-I5-jdn"/>
-                                        <exclude reference="ZqM-8s-cvX"/>
-                                        <exclude reference="jMn-nU-bp9"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="subviews">
-                                        <include reference="OF2-Jw-Kse"/>
-                                        <include reference="ywP-2A-4iy"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="sUQ-ql-64t"/>
-                                        <include reference="yUt-BR-ARW"/>
-                                        <include reference="6Gn-zw-aB0"/>
-                                        <include reference="Lkc-Ot-5e3"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="TpK-oS-XfT"/>
-                                        <include reference="79g-Xo-wGp"/>
-                                        <include reference="UfP-Ph-Hfb"/>
-                                        <include reference="f6m-RZ-igS"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="WK3-3G-peU"/>
-                                        <include reference="nVJ-Li-RdC"/>
-                                        <include reference="9rv-Ko-GT0"/>
-                                        <include reference="fxf-C9-rtC"/>
-                                        <include reference="TJp-vk-wFd"/>
-                                        <include reference="jye-I5-jdn"/>
-                                        <include reference="ZqM-8s-cvX"/>
-                                        <include reference="jMn-nU-bp9"/>
-                                    </mask>
-                                </variation>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kux-aw-eI7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesualdo Bertolotti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywP-2A-4iy" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="300" y="206" width="11" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.2627450980392157" green="0.35686274509803922" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="dZx-gD-Q7I" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="leading" id="39M-TJ-R11"/>
+                            <constraint firstItem="f6m-RZ-igS" firstAttribute="centerX" secondItem="Wro-qf-ZSH" secondAttribute="centerX" id="4lM-dF-qnh"/>
+                            <constraint firstItem="kux-aw-eI7" firstAttribute="leading" secondItem="ywP-2A-4iy" secondAttribute="trailing" constant="20" id="4wY-EL-oM0"/>
                             <constraint firstItem="qcd-UR-FIh" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="trailing" constant="20" id="7El-I1-h0T"/>
+                            <constraint firstItem="ywP-2A-4iy" firstAttribute="top" secondItem="OF2-Jw-Kse" secondAttribute="bottom" constant="5" id="8xB-07-ayR"/>
                             <constraint firstItem="GWE-ax-bVf" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="Eve-GW-fKB"/>
                             <constraint firstItem="95h-qh-vDc" firstAttribute="top" secondItem="Yht-Jk-Sw2" secondAttribute="bottom" constant="20" id="JRw-FT-pgk"/>
                             <constraint firstItem="95h-qh-vDc" firstAttribute="leading" secondItem="Wro-qf-ZSH" secondAttribute="leadingMargin" id="MDu-Xs-u2M"/>
                             <constraint firstItem="EGa-4i-Crj" firstAttribute="top" secondItem="mxV-0k-Iss" secondAttribute="bottom" constant="5" id="NVf-sB-XBL"/>
-                            <constraint firstItem="KuR-sI-cbO" firstAttribute="leading" secondItem="Wro-qf-ZSH" secondAttribute="leadingMargin" constant="-20" id="UFE-b1-zzI"/>
+                            <constraint firstItem="kux-aw-eI7" firstAttribute="centerY" secondItem="ywP-2A-4iy" secondAttribute="centerY" id="OMs-BE-TWZ"/>
+                            <constraint firstItem="TpK-oS-XfT" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="leading" id="PeJ-Nc-r2C"/>
                             <constraint firstItem="ipm-YH-5N6" firstAttribute="top" secondItem="5ow-GJ-KLg" secondAttribute="bottom" constant="5" id="Uj4-S6-kvE"/>
+                            <constraint firstItem="UfP-Ph-Hfb" firstAttribute="centerX" secondItem="Wro-qf-ZSH" secondAttribute="centerX" id="W2V-mX-tUW"/>
                             <constraint firstItem="5ow-GJ-KLg" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="leading" id="Wx7-bk-b1o"/>
+                            <constraint firstItem="OF2-Jw-Kse" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="leading" id="Y3q-ws-fyn"/>
                             <constraint firstItem="dZx-gD-Q7I" firstAttribute="top" secondItem="xFN-3H-CLq" secondAttribute="bottom" constant="5" id="YKk-07-JYg"/>
                             <constraint firstItem="95h-qh-vDc" firstAttribute="width" secondItem="Wro-qf-ZSH" secondAttribute="width" multiplier="0.4" id="ZFg-fR-ClD"/>
-                            <constraint firstItem="KuR-sI-cbO" firstAttribute="leading" secondItem="Wro-qf-ZSH" secondAttribute="leadingMargin" id="cGT-4t-Icv"/>
                             <constraint firstItem="5ow-GJ-KLg" firstAttribute="top" secondItem="dZx-gD-Q7I" secondAttribute="bottom" constant="10" id="deE-p0-6Ce"/>
+                            <constraint firstItem="ywP-2A-4iy" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="leading" id="gQe-bg-b7b"/>
                             <constraint firstItem="EGa-4i-Crj" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="gTf-ho-xtQ"/>
-                            <constraint firstItem="KuR-sI-cbO" firstAttribute="leading" secondItem="Wro-qf-ZSH" secondAttribute="leadingMargin" id="i1Q-Cm-yih"/>
+                            <constraint firstItem="ocI-8X-Gme" firstAttribute="top" secondItem="UfP-Ph-Hfb" secondAttribute="bottom" constant="40" id="h8F-rx-vhd"/>
+                            <constraint firstItem="TpK-oS-XfT" firstAttribute="top" secondItem="ywP-2A-4iy" secondAttribute="bottom" constant="5" id="hDR-du-aL4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="qcd-UR-FIh" firstAttribute="top" secondItem="Yht-Jk-Sw2" secondAttribute="bottom" constant="25" id="ixU-eV-eZY"/>
-                            <constraint firstItem="ocI-8X-Gme" firstAttribute="top" secondItem="KuR-sI-cbO" secondAttribute="bottom" id="oi7-ML-YNF"/>
+                            <constraint firstItem="OF2-Jw-Kse" firstAttribute="top" secondItem="ipm-YH-5N6" secondAttribute="bottom" constant="20" id="kYO-Jx-3rH"/>
                             <constraint firstItem="ipm-YH-5N6" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="leading" id="p3K-da-ac0"/>
                             <constraint firstItem="mxV-0k-Iss" firstAttribute="leading" secondItem="qcd-UR-FIh" secondAttribute="leading" id="prT-QY-U5v"/>
+                            <constraint firstItem="f6m-RZ-igS" firstAttribute="top" secondItem="TpK-oS-XfT" secondAttribute="bottom" constant="20" id="u2i-JG-T3T"/>
                             <constraint firstItem="xFN-3H-CLq" firstAttribute="top" secondItem="95h-qh-vDc" secondAttribute="bottom" constant="20" id="uCy-Yz-ie6"/>
                             <constraint firstItem="xFN-3H-CLq" firstAttribute="leading" secondItem="95h-qh-vDc" secondAttribute="leading" id="xrH-LM-PJP"/>
-                            <constraint firstItem="KuR-sI-cbO" firstAttribute="width" secondItem="Wro-qf-ZSH" secondAttribute="width" id="yb0-eI-abg"/>
                             <constraint firstItem="GWE-ax-bVf" firstAttribute="top" secondItem="qcd-UR-FIh" secondAttribute="bottom" constant="5" id="ymh-we-f1p"/>
                             <constraint firstItem="mxV-0k-Iss" firstAttribute="top" secondItem="GWE-ax-bVf" secondAttribute="bottom" constant="20" id="ytr-vk-pfB"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OF2-Jw-Kse"/>
+                                <exclude reference="TpK-oS-XfT"/>
+                                <exclude reference="UfP-Ph-Hfb"/>
+                                <exclude reference="f6m-RZ-igS"/>
+                                <exclude reference="kux-aw-eI7"/>
+                                <exclude reference="ywP-2A-4iy"/>
+                            </mask>
                             <mask key="constraints">
-                                <exclude reference="cGT-4t-Icv"/>
-                                <exclude reference="i1Q-Cm-yih"/>
+                                <exclude reference="Y3q-ws-fyn"/>
+                                <exclude reference="kYO-Jx-3rH"/>
+                                <exclude reference="8xB-07-ayR"/>
+                                <exclude reference="gQe-bg-b7b"/>
+                                <exclude reference="PeJ-Nc-r2C"/>
+                                <exclude reference="hDR-du-aL4"/>
+                                <exclude reference="4wY-EL-oM0"/>
+                                <exclude reference="OMs-BE-TWZ"/>
+                                <exclude reference="4lM-dF-qnh"/>
+                                <exclude reference="u2i-JG-T3T"/>
+                                <exclude reference="W2V-mX-tUW"/>
+                                <exclude reference="h8F-rx-vhd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="OF2-Jw-Kse"/>
+                                <include reference="TpK-oS-XfT"/>
+                                <include reference="UfP-Ph-Hfb"/>
+                                <include reference="f6m-RZ-igS"/>
+                                <include reference="kux-aw-eI7"/>
+                                <include reference="ywP-2A-4iy"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Y3q-ws-fyn"/>
+                                <include reference="kYO-Jx-3rH"/>
+                                <include reference="8xB-07-ayR"/>
+                                <include reference="gQe-bg-b7b"/>
+                                <include reference="PeJ-Nc-r2C"/>
+                                <include reference="hDR-du-aL4"/>
+                                <include reference="4wY-EL-oM0"/>
+                                <include reference="OMs-BE-TWZ"/>
+                                <include reference="4lM-dF-qnh"/>
+                                <include reference="u2i-JG-T3T"/>
+                                <include reference="W2V-mX-tUW"/>
+                                <include reference="h8F-rx-vhd"/>
                             </mask>
                         </variation>
                     </view>
