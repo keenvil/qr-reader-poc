@@ -1,28 +1,39 @@
 PODS:
+  - Alamofire (3.4.0)
   - libjingle_peerconnection (11177.2.0)
   - Socket.IO-Client-Swift (6.1.1)
   - Spring (1.0.3)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 3.4)
   - libjingle_peerconnection
   - Socket.IO-Client-Swift (~> 6.1.1)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
   Spring:
     :branch: swift2
     :git: https://github.com/MengTo/Spring.git
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 CHECKOUT OPTIONS:
   Spring:
     :commit: 18d5c7b74489de8044e34767f856d1e574f0820e
     :git: https://github.com/MengTo/Spring.git
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   libjingle_peerconnection: 3458f646ddd61f08a9f3a0c43fb01fff5c165eb8
   Socket.IO-Client-Swift: 86a3744e1da181a4078a24a632bd3acc34b9f1f5
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: d61b1e9ee641307e73a7d06ca6e52fad554c3cd6
+PODFILE CHECKSUM: b994cd86017c9f5a923eb93416a153a14a1ae691
 
 COCOAPODS: 1.0.0.rc.2
