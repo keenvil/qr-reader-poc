@@ -21,6 +21,8 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
         addVideoViews()
         
         webRTCService = WebRTCService(delegate: self, localView: localView!, remoteView: remoteView!)
+      
+        webRTCService.makeCall()
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -52,6 +54,7 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
     
     @IBAction func hungUp(sender: AnyObject) {
         webRTCService.hungUp()
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
