@@ -125,7 +125,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     print(encodedUserData)
     userData = extractUserData(encodedUserData)
     
-    if (userData.count >= 9) {
+    if (userData.count >= 7) {
       messageLabel.text = "DNI reconocido: " + userData[1]
       stopVideoCapturing()
       performSegueWithIdentifier("second", sender: self)

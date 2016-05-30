@@ -18,6 +18,10 @@
 		F31485A51CDBC1E400B21102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31485A31CDBC1E400B21102 /* LaunchScreen.storyboard */; };
 		F31485B01CDBC1E500B21102 /* qr_reader_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31485AF1CDBC1E500B21102 /* qr_reader_pocTests.swift */; };
 		F31485BB1CDBC1E500B21102 /* qr_reader_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31485BA1CDBC1E500B21102 /* qr_reader_pocUITests.swift */; };
+		F3D4C15C1CFC73DE00D7B5B4 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */; };
+		F3D4C15E1CFC744300D7B5B4 /* WebRTCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */; };
+		F3D4C1601CFC749700D7B5B4 /* VideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */; };
+		F3D4C1631CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,11 @@
 		F31485B61CDBC1E500B21102 /* qr-reader-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "qr-reader-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31485BA1CDBC1E500B21102 /* qr_reader_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qr_reader_pocUITests.swift; sourceTree = "<group>"; };
 		F31485BC1CDBC1E500B21102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCService.swift; sourceTree = "<group>"; };
+		F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCallViewController.swift; sourceTree = "<group>"; };
+		F3D4C1611CFC848600D7B5B4 /* qr-reader-poc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qr-reader-poc-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "qr-reader-poc-Bridging-Header.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +150,8 @@
 		F31485991CDBC1E400B21102 /* qr-reader-poc */ = {
 			isa = PBXGroup;
 			children = (
+				F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */,
+				F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */,
 				F314859A1CDBC1E400B21102 /* AppDelegate.swift */,
 				F314859C1CDBC1E400B21102 /* ViewController.swift */,
 				9D4DEDB21CDD176100D1996C /* SecondViewController.swift */,
@@ -148,6 +159,9 @@
 				F31485A11CDBC1E400B21102 /* Assets.xcassets */,
 				F31485A31CDBC1E400B21102 /* LaunchScreen.storyboard */,
 				F31485A61CDBC1E400B21102 /* Info.plist */,
+				F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */,
+				F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */,
+				F3D4C1611CFC848600D7B5B4 /* qr-reader-poc-Bridging-Header.h */,
 			);
 			path = "qr-reader-poc";
 			sourceTree = "<group>";
@@ -434,8 +448,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D4DEDB31CDD176100D1996C /* SecondViewController.swift in Sources */,
+				F3D4C15C1CFC73DE00D7B5B4 /* UserProfileViewController.swift in Sources */,
+				F3D4C1601CFC749700D7B5B4 /* VideoCallViewController.swift in Sources */,
 				F314859D1CDBC1E400B21102 /* ViewController.swift in Sources */,
+				F3D4C1631CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m in Sources */,
 				F314859B1CDBC1E400B21102 /* AppDelegate.swift in Sources */,
+				F3D4C15E1CFC744300D7B5B4 /* WebRTCService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,14 +596,18 @@
 			baseConfigurationReference = B777118B253EAC70F0BDA9FE /* Pods-qr-reader-poc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "qr-reader-poc/qr-reader-poc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -595,14 +617,17 @@
 			baseConfigurationReference = 3DC468C518D1881851F1C0ED /* Pods-qr-reader-poc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "qr-reader-poc/qr-reader-poc-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

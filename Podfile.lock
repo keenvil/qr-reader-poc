@@ -1,7 +1,11 @@
 PODS:
+  - libjingle_peerconnection (11177.2.0)
+  - Socket.IO-Client-Swift (6.1.1)
   - Spring (1.0.3)
 
 DEPENDENCIES:
+  - libjingle_peerconnection
+  - Socket.IO-Client-Swift (~> 6.1.1)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
 
 EXTERNAL SOURCES:
@@ -15,8 +19,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
+  libjingle_peerconnection: 3458f646ddd61f08a9f3a0c43fb01fff5c165eb8
+  Socket.IO-Client-Swift: 86a3744e1da181a4078a24a632bd3acc34b9f1f5
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
 
-PODFILE CHECKSUM: e2c585802a59e68d694b1c745a9d8f7f372bd743
+PODFILE CHECKSUM: d61b1e9ee641307e73a7d06ca6e52fad554c3cd6
 
 COCOAPODS: 1.0.0.rc.2
