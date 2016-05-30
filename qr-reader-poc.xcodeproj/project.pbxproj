@@ -22,6 +22,7 @@
 		F3D4C15E1CFC744300D7B5B4 /* WebRTCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */; };
 		F3D4C1601CFC749700D7B5B4 /* VideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */; };
 		F3D4C1631CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */; };
+		F3D4C16D1CFCE10600D7B5B4 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCallViewController.swift; sourceTree = "<group>"; };
 		F3D4C1611CFC848600D7B5B4 /* qr-reader-poc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qr-reader-poc-Bridging-Header.h"; sourceTree = "<group>"; };
 		F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "qr-reader-poc-Bridging-Header.m"; sourceTree = "<group>"; };
+		F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		F31485991CDBC1E400B21102 /* qr-reader-poc */ = {
 			isa = PBXGroup;
 			children = (
+				F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */,
 				F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */,
 				F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */,
 				F314859A1CDBC1E400B21102 /* AppDelegate.swift */,
@@ -299,6 +302,7 @@
 			files = (
 				F31485A51CDBC1E400B21102 /* LaunchScreen.storyboard in Resources */,
 				F31485A21CDBC1E400B21102 /* Assets.xcassets in Resources */,
+				F3D4C16D1CFCE10600D7B5B4 /* beep.mp3 in Resources */,
 				F31485A01CDBC1E400B21102 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

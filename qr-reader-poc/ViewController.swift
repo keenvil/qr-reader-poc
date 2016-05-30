@@ -19,13 +19,32 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   var videoPreviewLayer:AVCaptureVideoPreviewLayer?
   var qrCodeFrameView:UIView?
   
+  var audioPlayer:AVAudioPlayer!
+  
   // Added to support different barcodes
   let supportedBarCodes = [AVMetadataObjectTypePDF417Code]
   
   var userData: [String] = []
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
   
   override func viewWillAppear(animated: Bool) {
+    do {
+      try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: [])
+      try AVAudioSession.sharedInstance().setActive(true)
+      let url = NSBundle.mainBundle().URLForResource("beep", withExtension: "mp3")!
+      audioPlayer = try AVAudioPlayer(contentsOfURL: url)
+      if let player = audioPlayer {
+        player.prepareToPlay()
+      } else {
+        print("Unable to load beep.mp3")
+      }
+    } catch {
+      print("beep.mp3 couldnt be loaded")
+    }
+    
     // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
     // as the media type parameter.
     let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
@@ -127,6 +146,9 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     self.userData = self.extractUserData(encodedUserData)
     //print(encodedUserData)
     if (userData.count >= 7) {
+      let result = audioPlayer.play()
+      print("Play file: \(audioPlayer.data) result \(result)")
+      
       messageLabel.text = "DNI reconocido: " + userData[1]
       stopVideoCapturing()
       
