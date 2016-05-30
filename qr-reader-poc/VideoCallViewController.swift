@@ -49,10 +49,10 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
         return videoOutlet.frame
     }
   
-  func connectionEstablished() {
-    print("Conexión establecida")
-    self.timer?.invalidate()
-  }
+    func connectionEstablished() {
+      print("Conexión establecida")
+      self.timer?.invalidate()
+    }
     
     func makeCall() {
       print("Enviando oferta de conexión")
