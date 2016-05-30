@@ -14,6 +14,7 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
     var localView : RTCEAGLVideoView?
     var remoteView : RTCEAGLVideoView?
     var webRTCService : WebRTCService!
+  var timer:NSTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
         
         webRTCService = WebRTCService(delegate: self, localView: localView!, remoteView: remoteView!)
       
-        webRTCService.makeCall()
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target:self, selector: #selector(VideoCallViewController.makeCall), userInfo: nil, repeats: true)
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -47,8 +48,14 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
     func getVideoFrame() -> CGRect {
         return videoOutlet.frame
     }
+  
+  func connectionEstablished() {
+    print("Conexión establecida")
+    self.timer?.invalidate()
+  }
     
-    @IBAction func makeCall(sender: AnyObject) {
+    func makeCall() {
+      print("Enviando oferta de conexión")
         webRTCService.makeCall()
     }
     

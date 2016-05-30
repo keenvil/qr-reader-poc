@@ -12,6 +12,7 @@ import SocketIOClientSwift
 
 protocol WebRTCServiceDelegate {
     func getVideoFrame() -> CGRect
+    func connectionEstablished()
 }
 
 class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionDelegate {
@@ -80,7 +81,8 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
     }
     
     func signalingServerURL() -> NSURL? {
-        return NSURL(string: "https://signaling-eabait.rhcloud.com")
+//      return NSURL(string: "http://192.168.0.15:8080")
+      return NSURL(string: "https://signaling-eabait.rhcloud.com")
     }
     
     func initWebRTC() {
@@ -315,6 +317,7 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
                     return
                 }
                 self.peerConnection.setRemoteDescriptionWithDelegate(self, sessionDescription: sdp)
+                self.delegate?.connectionEstablished()
                 
             } else if (type == "candidate" && self.peerStarted) {
                 
