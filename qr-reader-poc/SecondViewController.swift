@@ -39,6 +39,7 @@ class SecondViewController: UIViewController {
     genderLabel.text = getGender()
     documentLabel.text = isLatestDocumentSchema() ? userData[4] : userData[0]
     
+    avatarImage.image = UIImage(named: userData[userData.count-1])
     avatarImage.layer.borderWidth = 4
     avatarImage.layer.borderColor = UIColor.whiteColor().CGColor
   }

@@ -263,7 +263,7 @@
 				TargetAttributes = {
 					F31485961CDBC1E400B21102 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = JKES54HFV4;
+						DevelopmentTeam = 8EJK967ME7;
 					};
 					F31485AA1CDBC1E500B21102 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -607,7 +607,7 @@
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr;
+				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "qr-reader-poc/qr-reader-poc-Bridging-Header.h";
@@ -628,7 +628,7 @@
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr;
+				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "qr-reader-poc/qr-reader-poc-Bridging-Header.h";

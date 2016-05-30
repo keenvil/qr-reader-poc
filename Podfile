@@ -9,6 +9,8 @@ target 'qr-reader-poc' do
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
   pod 'libjingle_peerconnection'
   pod 'Socket.IO-Client-Swift', '~> 6.1.1'
+  pod 'Alamofire', '~> 3.4'
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 
   target 'qr-reader-pocTests' do
     inherit! :search_paths
