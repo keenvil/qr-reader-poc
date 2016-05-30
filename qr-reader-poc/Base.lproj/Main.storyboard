@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -306,18 +305,18 @@
                                 <include reference="ywP-2A-4iy"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PeJ-Nc-r2C"/>
-                                <include reference="hDR-du-aL4"/>
-                                <include reference="4lM-dF-qnh"/>
-                                <include reference="u2i-JG-T3T"/>
-                                <include reference="W2V-mX-tUW"/>
-                                <include reference="4wY-EL-oM0"/>
-                                <include reference="OMs-BE-TWZ"/>
                                 <include reference="Y3q-ws-fyn"/>
                                 <include reference="kYO-Jx-3rH"/>
                                 <include reference="8xB-07-ayR"/>
                                 <include reference="gQe-bg-b7b"/>
+                                <include reference="4wY-EL-oM0"/>
+                                <include reference="OMs-BE-TWZ"/>
+                                <include reference="W2V-mX-tUW"/>
                                 <include reference="h8F-rx-vhd"/>
+                                <include reference="PeJ-Nc-r2C"/>
+                                <include reference="hDR-du-aL4"/>
+                                <include reference="4lM-dF-qnh"/>
+                                <include reference="u2i-JG-T3T"/>
                             </mask>
                         </variation>
                     </view>
@@ -386,10 +385,10 @@
                                 <include reference="yyh-wX-8Xq"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="U2f-Ge-Im5"/>
-                                <include reference="j9X-Au-qNQ"/>
                                 <include reference="3p0-oU-0Pl"/>
                                 <include reference="hTS-Fx-YhO"/>
+                                <include reference="U2f-Ge-Im5"/>
+                                <include reference="j9X-Au-qNQ"/>
                             </mask>
                         </variation>
                     </view>

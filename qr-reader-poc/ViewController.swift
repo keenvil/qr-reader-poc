@@ -8,6 +8,8 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   
@@ -122,13 +124,24 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   }
   
   func showUser(encodedUserData: String!) {
-    print(encodedUserData)
-    userData = extractUserData(encodedUserData)
-    
+    self.userData = self.extractUserData(encodedUserData)
+    //print(encodedUserData)
     if (userData.count >= 7) {
       messageLabel.text = "DNI reconocido: " + userData[1]
       stopVideoCapturing()
-      performSegueWithIdentifier("second", sender: self)
+      
+      var json: JSON = nil
+      Alamofire.request(.GET, "https://uifaces.com/api/v1/random")
+        .responseJSON {response in
+          if let value = response.result.value {
+            print(value)
+            json = JSON(value)
+          }
+        
+        
+        self.userData.append(json["image_urls"]["bigger"].stringValue)
+        self.performSegueWithIdentifier("second", sender: self)
+      }
     }
   }
   
