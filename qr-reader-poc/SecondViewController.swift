@@ -39,11 +39,7 @@ class SecondViewController: UIViewController {
     genderLabel.text = getGender()
     documentLabel.text = isLatestDocumentSchema() ? userData[4] : userData[0]
     
-    if let url = NSURL(string: userData[userData.count-1]) {
-      if let data = NSData(contentsOfURL: url) {
-        avatarImage.image = UIImage(data: data)
-      }
-    }
+    avatarImage.image = selectAvatar()
     
     avatarImage.layer.borderWidth = 4
     avatarImage.layer.borderColor = UIColor.whiteColor().CGColor
@@ -66,6 +62,20 @@ class SecondViewController: UIViewController {
     return genderChar == "M" ? "Masculino" : "Femenino"
   }
   
-
+  func selectAvatar() -> UIImage {
+    
+    var name = "avatar_"
+    
+    name += getGender() == "Masculino" ? "male_" : "female_"
+    
+    name += String(Int(arc4random_uniform(UInt32(4 - 1))) + 1)
+    /*
+    if let image = NSDataAsset(name: name) {
+      
+    }*/
+    return UIImage(named: name)!
+    
+    //return UIImage(named: "avatar")!
+  }
 }
 

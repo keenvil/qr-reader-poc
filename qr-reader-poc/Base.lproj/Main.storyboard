@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="qr_reader_poc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myCommunity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -56,7 +56,7 @@
         <!--Visitante reconocido-->
         <scene sceneID="nqm-yQ-Znu">
             <objects>
-                <viewController id="7iP-Ke-PuU" customClass="SecondViewController" customModule="qr_reader_poc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7iP-Ke-PuU" customClass="SecondViewController" customModule="myCommunity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yht-Jk-Sw2"/>
                         <viewControllerLayoutGuide type="bottom" id="ocI-8X-Gme"/>
@@ -191,19 +191,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="95h-qh-vDc" customClass="SpringImageView" customModule="Spring">
-                                <rect key="frame" x="20" y="84" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="95h-qh-vDc" secondAttribute="height" multiplier="1:1" id="Qcg-tK-ewQ"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.20000000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kux-aw-eI7">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kux-aw-eI7">
                                 <rect key="frame" x="213" y="510" width="22" height="22"/>
                                 <connections>
                                     <segue destination="xrc-BE-rX8" kind="showDetail" id="Vci-kk-pMV"/>
@@ -235,8 +223,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesualdo Bertelotti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywP-2A-4iy" customClass="SpringLabel" customModule="Spring">
-                                <rect key="frame" x="20" y="509" width="173" height="24"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="95h-qh-vDc" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="20" y="84" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="95h-qh-vDc" secondAttribute="height" multiplier="1:1" id="Qcg-tK-ewQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gesualdo Bertellotti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywP-2A-4iy" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="20" y="509" width="177" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -339,10 +339,10 @@
             </objects>
             <point key="canvasLocation" x="1794" y="254"/>
         </scene>
-        <!--Gesualdo Bertelotti-->
+        <!--Gesualdo Bertellotti-->
         <scene sceneID="oa2-qe-7UM">
             <objects>
-                <viewController id="6Jb-Gv-nhv" customClass="UserProfileViewController" customModule="qr_reader_poc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Jb-Gv-nhv" customClass="UserProfileViewController" customModule="myCommunity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dvX-2l-y1K"/>
                         <viewControllerLayoutGuide type="bottom" id="PQ5-7j-pR8"/>
@@ -352,10 +352,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-wall" translatesAutoresizingMaskIntoConstraints="NO" id="zan-CW-Xf7">
-                                <rect key="frame" x="150" y="152" width="300" height="295"/>
+                                <rect key="frame" x="106" y="105.5" width="388" height="388"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyh-wX-8Xq">
-                                <rect key="frame" x="268" y="467.5" width="64" height="64"/>
+                                <rect key="frame" x="268" y="514" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="cJI-hF-WO1"/>
                                     <constraint firstAttribute="width" constant="64" id="cxL-WK-Vwy"/>
@@ -392,7 +392,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Gesualdo Bertelotti" id="sdE-kg-Tdp">
+                    <navigationItem key="navigationItem" title="Gesualdo Bertellotti" id="sdE-kg-Tdp">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="LC3-pQ-p2S">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sUf-3u-r3L">
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
@@ -412,7 +412,7 @@
         <!--Video llamada con Gesualdo Bertelotti-->
         <scene sceneID="hTS-ch-DKV">
             <objects>
-                <viewController id="32e-EF-i0a" customClass="VideoCallViewController" customModule="qr_reader_poc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="32e-EF-i0a" customClass="VideoCallViewController" customModule="myCommunity" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tNI-a7-Rkt"/>
                         <viewControllerLayoutGuide type="bottom" id="1zk-sa-TUp"/>
@@ -511,6 +511,6 @@
     <resources>
         <image name="avatar" width="128" height="128"/>
         <image name="call-icon" width="128" height="128"/>
-        <image name="user-wall" width="300" height="295"/>
+        <image name="user-wall" width="388" height="388"/>
     </resources>
 </document>
