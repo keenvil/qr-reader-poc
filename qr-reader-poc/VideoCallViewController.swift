@@ -14,7 +14,7 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
     var localView : RTCEAGLVideoView?
     var remoteView : RTCEAGLVideoView?
     var webRTCService : WebRTCService!
-  var timer:NSTimer?
+    var timer:NSTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
     }
     
     func addVideoViews() {
-        remoteView = RTCEAGLVideoView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
+        remoteView = RTCEAGLVideoView(frame: CGRect(x: 0, y: 0, width: videoOutlet.frame.size.width, height: videoOutlet.frame.size.height))
         remoteView?.delegate = self
         videoOutlet.addSubview(remoteView!)
         
@@ -53,9 +53,9 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
       webRTCService.makeCall()
     }
   
-  func connectionTerminated() {
-    dismissViewControllerAnimated(true, completion: nil)
-  }
+    func connectionTerminated() {
+      dismissViewControllerAnimated(true, completion: nil)
+    }
     
     @IBAction func hungUp(sender: AnyObject) {
         webRTCService.hungUp()

@@ -81,7 +81,6 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
     }
     
     func signalingServerURL() -> NSURL? {
-//      return NSURL(string: "http://192.168.0.15:8080")
       return NSURL(string: "https://signaling-eabait.rhcloud.com")
     }
     
@@ -183,12 +182,12 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
         ]
         emmitSignalingMessage(message);
         closeSession()
-        delegate?.connectionTerminated()
     }
     
     func closeSession() {
         stopPeerConnection()
         socket.disconnect()
+        delegate?.connectionTerminated()
     }
     
     func makeCall() {
@@ -353,7 +352,7 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
             
             } else if (type == "hangup" && self.peerStarted) {
         
-                self.stopPeerConnection()
+                self.closeSession()
                 
             } else {
                 //Wrong message format. Close session
