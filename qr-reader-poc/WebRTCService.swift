@@ -11,8 +11,8 @@ import UIKit
 import SocketIOClientSwift
 
 protocol WebRTCServiceDelegate {
-    func getVideoFrame() -> CGRect
     func connectionEstablished()
+    func connectionTerminated()
 }
 
 class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionDelegate {
@@ -147,16 +147,19 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
         let session = AVAudioSession.sharedInstance()
         do {
             try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
-        } catch _ {
+        } catch let error as NSError {
+          print(error.description)
         }
         do {
             try session.overrideOutputAudioPort(AVAudioSessionPortOverride.Speaker)
-        } catch _ {
-        }
+        } catch let error as NSError {
+          print(error.description)
+      }
         do {
             try session.setActive(true)
-        } catch _ {
-        }
+        } catch let error as NSError {
+          print(error.description)
+      }
     }
     
     func stopPeerConnection() {
@@ -179,7 +182,8 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
             "type" : "hangup"
         ]
         emmitSignalingMessage(message);
-        stopPeerConnection()
+        closeSession()
+        delegate?.connectionTerminated()
     }
     
     func closeSession() {
@@ -244,8 +248,11 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
             self.remoteVideoTrack?.addRenderer(self.remoteView)
             
             self.remoteAudioTrack = audTrack
-            self.configureAudioSession()
-            
+          
+            print("Video stream \(videoTrack.source.debugDescription)")
+            print("Video state \(videoTrack.state())")
+            print("Audio stream \(audTrack.debugDescription)")
+            print("Audio state \(audTrack.state())")
         })
     }
 
@@ -262,17 +269,32 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
 
     //MARK [RTCSessionDescriptionDelegate - begin]
     func peerConnection(peerConnection: RTCPeerConnection!, didCreateSessionDescription sdp: RTCSessionDescription!, error: NSError!) {
+        print("Created session \(sdp.type)")
         if (error == nil) {
             peerConnection.setLocalDescriptionWithDelegate(self, sessionDescription: sdp)
-            let json:[String: AnyObject] = [
-                "type" : sdp.type,
-                "sdp"  : sdp.description
-            ]
-            emmitSignalingMessage(json);
+//            let json:[String: AnyObject] = [
+//                "type" : sdp.type,
+//                "sdp"  : sdp.description
+//            ]
+//            emmitSignalingMessage(json)
+        } else {
+          print("Reported error \(error)")
         }
     }
 
     func peerConnection(peerConnection: RTCPeerConnection!, didSetSessionDescriptionWithError error: NSError!) {
+      if (error == nil && (peerConnection.signalingState == RTCSignalingHaveLocalOffer || peerConnection.signalingState == RTCSignalingHaveLocalPrAnswer )) {
+        let sdp = peerConnection.localDescription
+        let json:[String: AnyObject] = [
+          "type" : sdp.type,
+          "sdp"  : sdp.description
+        ]
+        emmitSignalingMessage(json)
+      } else if (error != nil && peerConnection.signalingState == RTCSignalingHaveRemoteOffer) {
+        self.peerConnection.createAnswerWithDelegate(self, constraints: MediaConstraints.CategoryConstraints)
+      } else {
+        print("Reported error \(error)")
+      }
     }
     //MARK [RTCSessionDescriptionDelegate - end]
     
@@ -307,8 +329,6 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
                 let sdp = RTCSessionDescription(type: type, sdp: json["sdp"] as! String)
                 self.peerConnection = self.prepareNewConnection()
                 self.peerConnection.setRemoteDescriptionWithDelegate(self, sessionDescription: sdp)
-                self.peerConnection.createAnswerWithDelegate(self, constraints: MediaConstraints.CategoryConstraints)
-                self.peerStarted = true;
                 
             } else if (type == "answer" && self.peerStarted) {
                 
@@ -320,11 +340,14 @@ class WebRTCService: NSObject, RTCSessionDescriptionDelegate, RTCPeerConnectionD
                 self.delegate?.connectionEstablished()
                 
             } else if (type == "candidate" && self.peerStarted) {
+              
+                print("Canddiates \(json["candidate"] as! String)")
                 
                 let candidate = RTCICECandidate(
                     mid: json["sdpMid"] as! String,
                     index: json["sdpMLineIndex"] as! Int,
-                    sdp: json["candidate"] as! String)
+                    sdp: json["candidate"] as! String
+                )
                 
                 self.peerConnection.addICECandidate(candidate)
             

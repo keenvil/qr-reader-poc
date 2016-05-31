@@ -156,10 +156,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       Alamofire.request(.GET, "https://uifaces.com/api/v1/random")
         .responseJSON {response in
           if let value = response.result.value {
-            print(value)
             json = JSON(value)
           }
-        
         
         self.userData.append(json["image_urls"]["bigger"].stringValue)
         self.performSegueWithIdentifier("second", sender: self)

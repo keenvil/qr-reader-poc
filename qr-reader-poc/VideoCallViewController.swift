@@ -23,7 +23,7 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
         
         webRTCService = WebRTCService(delegate: self, localView: localView!, remoteView: remoteView!)
       
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target:self, selector: #selector(VideoCallViewController.makeCall), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target:self, selector: #selector(VideoCallViewController.makeCall), userInfo: nil, repeats: true)
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -34,34 +34,31 @@ class VideoCallViewController : UIViewController, RTCEAGLVideoViewDelegate, WebR
     }
     
     func addVideoViews() {
-        remoteView = RTCEAGLVideoView(frame: CGRect(x: 0, y: 0, width: videoOutlet.frame.size.width, height: videoOutlet.frame.size.height))
+        remoteView = RTCEAGLVideoView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
         remoteView?.delegate = self
         videoOutlet.addSubview(remoteView!)
         
         localView = RTCEAGLVideoView(frame: CGRect(x: 10, y: 70, width: videoOutlet.frame.size.width / 4, height: videoOutlet.frame.size.width / 4 * 960 / 640))
         localView?.delegate = self
-        
         videoOutlet.addSubview(localView!)
-        //videoOutlet.bringSubviewToFront(topView)
-    }
-    
-    func getVideoFrame() -> CGRect {
-        return videoOutlet.frame
     }
   
     func connectionEstablished() {
-      print("Conexión establecida")
+      print("Got answer")
       self.timer?.invalidate()
     }
     
     func makeCall() {
-      print("Enviando oferta de conexión")
-        webRTCService.makeCall()
+      print("Sending conn offer")
+      webRTCService.makeCall()
     }
+  
+  func connectionTerminated() {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
     
     @IBAction func hungUp(sender: AnyObject) {
         webRTCService.hungUp()
-        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func videoView(videoView: RTCEAGLVideoView!, didChangeVideoSize size: CGSize) {
