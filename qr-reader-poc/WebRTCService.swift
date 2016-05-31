@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  MyWebRTCSwift
-//
-//  Created by Keiichi Unno on 6/22/15.
-//  Copyright (c) 2015 Keiichi Unno. All rights reserved.
-//
-
 import AVFoundation
 import UIKit
 import SocketIOClientSwift

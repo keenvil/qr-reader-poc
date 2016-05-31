@@ -1,7 +1,4 @@
 //
-//  ViewController.swift
-//  MyWebRTCSwift
-//
 //  Created by Esteban Abait on 5/26/16.
 //
 
