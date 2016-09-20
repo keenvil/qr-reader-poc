@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 import Alamofire
-import SwiftyJSON
 
 class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
   
@@ -30,12 +29,12 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     super.viewDidLoad()
   }
   
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     do {
-      try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: [])
+      try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: [])
       try AVAudioSession.sharedInstance().setActive(true)
-      let url = NSBundle.mainBundle().URLForResource("beep", withExtension: "mp3")!
-      audioPlayer = try AVAudioPlayer(contentsOfURL: url)
+      let url = Bundle.main.url(forResource: "beep", withExtension: "mp3")!
+      audioPlayer = try AVAudioPlayer(contentsOf: url)
       if let player = audioPlayer {
         player.prepareToPlay()
       } else {
@@ -47,7 +46,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video
     // as the media type parameter.
-    let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
     
     messageLabel.text = "Detectando DNI"
     
@@ -65,7 +64,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       captureSession?.addOutput(captureMetadataOutput)
       
       // Set delegate and use the default dispatch queue to execute the call back
-      captureMetadataOutput.setMetadataObjectsDelegate(self, queue: dispatch_get_main_queue())
+      captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
       
       // Detect all the supported bar code
       captureMetadataOutput.metadataObjectTypes = supportedBarCodes
@@ -80,16 +79,16 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       captureSession?.startRunning()
       
       // Move the message label to the top view
-      view.bringSubviewToFront(messageLabel)
+      view.bringSubview(toFront: messageLabel)
       
       // Initialize QR Code Frame to highlight the QR code
       qrCodeFrameView = UIView()
       
       if let qrCodeFrameView = qrCodeFrameView {
-        qrCodeFrameView.layer.borderColor = UIColor.greenColor().CGColor
+        qrCodeFrameView.layer.borderColor = UIColor.green.cgColor
         qrCodeFrameView.layer.borderWidth = 2
         view.addSubview(qrCodeFrameView)
-        view.bringSubviewToFront(qrCodeFrameView)
+        view.bringSubview(toFront: qrCodeFrameView)
       }
       
     } catch {
@@ -103,16 +102,16 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     super.didReceiveMemoryWarning()
   }
   
-  override func viewDidAppear(animated: Bool) {
+  override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(true)
 
   }
   
-  func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+  func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
     
     // Check if the metadataObjects array is not nil and it contains at least one object.
     if metadataObjects == nil || metadataObjects.count == 0 {
-      qrCodeFrameView?.frame = CGRectZero
+      qrCodeFrameView?.frame = CGRect.zero
       messageLabel.text = "DNI no reconocido"
       return
     }
@@ -126,7 +125,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     if supportedBarCodes.contains(metadataObj.type) {
       // if metadataObj.type == AVMetadataObjectTypeQRCode {
       // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
-      let barCodeObject = videoPreviewLayer?.transformedMetadataObjectForMetadataObject(metadataObj)
+      let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
       qrCodeFrameView?.frame = barCodeObject!.bounds
       
       if metadataObj.stringValue != nil {
@@ -142,7 +141,7 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     self.captureSession = nil;
   }
   
-  func showUser(encodedUserData: String!) {
+  func showUser(_ encodedUserData: String!) {
     self.userData = self.extractUserData(encodedUserData)
     //print(encodedUserData)
     if (userData.count >= 7) {
@@ -152,18 +151,18 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
       messageLabel.text = "DNI reconocido: " + userData[1]
       stopVideoCapturing()
       
-      self.performSegueWithIdentifier("second", sender: self)
+      self.performSegue(withIdentifier: "second", sender: self)
     }
   }
   
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-    let navigationController = segue.destinationViewController as! UINavigationController
+  override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+    let navigationController = segue.destination as! UINavigationController
     
     let userDetailController = navigationController.topViewController as! SecondViewController
     userDetailController.userData = userData
   }
   
-  func extractUserData(encodedUserData: String) -> [String] {
+  func extractUserData(_ encodedUserData: String) -> [String] {
     return encodedUserData.characters.split{$0 == "@"}.map(String.init)
   }
 

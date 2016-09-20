@@ -6,20 +6,15 @@ target 'qr-reader-poc' do
   use_frameworks!
 
   # Pods for qr-reader-poc
-  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
-  pod 'libjingle_peerconnection'
-  pod 'Socket.IO-Client-Swift', '~> 6.1.1'
-  pod 'Alamofire', '~> 3.4'
-  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
+  pod 'Alamofire', '~> 4.0'
 
-  target 'qr-reader-pocTests' do
-    inherit! :search_paths
-    # Pods for testing
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |configuration|
+      configuration.build_settings['SWIFT_VERSION'] = "3"
+    end
   end
-
-  target 'qr-reader-pocUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

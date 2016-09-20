@@ -42,15 +42,15 @@ class SecondViewController: UIViewController {
     avatarImage.image = selectAvatar()
     
     avatarImage.layer.borderWidth = 4
-    avatarImage.layer.borderColor = UIColor.whiteColor().CGColor
+    avatarImage.layer.borderColor = UIColor.white.cgColor
   }
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
 
-  @IBAction func cancel(sender: AnyObject) {
-    dismissViewControllerAnimated(false, completion: nil)
+  @IBAction func cancel(_ sender: AnyObject) {
+    dismiss(animated: false, completion: nil)
   }
   
   func isLatestDocumentSchema() -> Bool {

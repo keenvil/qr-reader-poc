@@ -7,40 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52B8CD691BC86B8812A7BCE5 /* Pods_qr_reader_pocUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618217C9A3D8EBAAE50271E4 /* Pods_qr_reader_pocUITests.framework */; };
 		5ECA1BF7E188900CFEF04243 /* Pods_qr_reader_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 898EC7FBDD9069184B0450C7 /* Pods_qr_reader_poc.framework */; };
-		7277F83B192AEDA5B270110A /* Pods_qr_reader_pocTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 361B61E7C1474A84C52139D6 /* Pods_qr_reader_pocTests.framework */; };
 		9D4DEDB31CDD176100D1996C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4DEDB21CDD176100D1996C /* SecondViewController.swift */; };
 		F314859B1CDBC1E400B21102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314859A1CDBC1E400B21102 /* AppDelegate.swift */; };
 		F314859D1CDBC1E400B21102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314859C1CDBC1E400B21102 /* ViewController.swift */; };
 		F31485A01CDBC1E400B21102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F314859E1CDBC1E400B21102 /* Main.storyboard */; };
 		F31485A21CDBC1E400B21102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31485A11CDBC1E400B21102 /* Assets.xcassets */; };
 		F31485A51CDBC1E400B21102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31485A31CDBC1E400B21102 /* LaunchScreen.storyboard */; };
-		F31485B01CDBC1E500B21102 /* qr_reader_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31485AF1CDBC1E500B21102 /* qr_reader_pocTests.swift */; };
-		F31485BB1CDBC1E500B21102 /* qr_reader_pocUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31485BA1CDBC1E500B21102 /* qr_reader_pocUITests.swift */; };
 		F3D4C15C1CFC73DE00D7B5B4 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */; };
-		F3D4C15E1CFC744300D7B5B4 /* WebRTCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */; };
-		F3D4C1601CFC749700D7B5B4 /* VideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */; };
-		F3D4C1631CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */; };
 		F3D4C16D1CFCE10600D7B5B4 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F31485AC1CDBC1E500B21102 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F314858F1CDBC1E400B21102 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F31485961CDBC1E400B21102;
-			remoteInfo = "qr-reader-poc";
-		};
-		F31485B71CDBC1E500B21102 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F314858F1CDBC1E400B21102 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F31485961CDBC1E400B21102;
-			remoteInfo = "qr-reader-poc";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		361B61E7C1474A84C52139D6 /* Pods_qr_reader_pocTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qr_reader_pocTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,17 +36,11 @@
 		F31485A11CDBC1E400B21102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F31485A41CDBC1E400B21102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F31485A61CDBC1E400B21102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F31485AB1CDBC1E500B21102 /* qr-reader-pocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "qr-reader-pocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31485AF1CDBC1E500B21102 /* qr_reader_pocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qr_reader_pocTests.swift; sourceTree = "<group>"; };
 		F31485B11CDBC1E500B21102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F31485B61CDBC1E500B21102 /* qr-reader-pocUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "qr-reader-pocUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F31485BA1CDBC1E500B21102 /* qr_reader_pocUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qr_reader_pocUITests.swift; sourceTree = "<group>"; };
 		F31485BC1CDBC1E500B21102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCService.swift; sourceTree = "<group>"; };
-		F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCallViewController.swift; sourceTree = "<group>"; };
-		F3D4C1611CFC848600D7B5B4 /* qr-reader-poc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "qr-reader-poc-Bridging-Header.h"; sourceTree = "<group>"; };
-		F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "qr-reader-poc-Bridging-Header.m"; sourceTree = "<group>"; };
 		F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,22 +50,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECA1BF7E188900CFEF04243 /* Pods_qr_reader_poc.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F31485A81CDBC1E500B21102 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7277F83B192AEDA5B270110A /* Pods_qr_reader_pocTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F31485B31CDBC1E500B21102 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52B8CD691BC86B8812A7BCE5 /* Pods_qr_reader_pocUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				F31485971CDBC1E400B21102 /* myCommunity.app */,
-				F31485AB1CDBC1E500B21102 /* qr-reader-pocTests.xctest */,
-				F31485B61CDBC1E500B21102 /* qr-reader-pocUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */,
-				F3D4C15F1CFC749700D7B5B4 /* VideoCallViewController.swift */,
-				F3D4C15D1CFC744300D7B5B4 /* WebRTCService.swift */,
 				F314859A1CDBC1E400B21102 /* AppDelegate.swift */,
 				F314859C1CDBC1E400B21102 /* ViewController.swift */,
 				9D4DEDB21CDD176100D1996C /* SecondViewController.swift */,
@@ -163,8 +113,6 @@
 				F31485A31CDBC1E400B21102 /* LaunchScreen.storyboard */,
 				F31485A61CDBC1E400B21102 /* Info.plist */,
 				F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */,
-				F3D4C1621CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m */,
-				F3D4C1611CFC848600D7B5B4 /* qr-reader-poc-Bridging-Header.h */,
 			);
 			path = "qr-reader-poc";
 			sourceTree = "<group>";
@@ -210,47 +158,6 @@
 			productReference = F31485971CDBC1E400B21102 /* myCommunity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F31485AA1CDBC1E500B21102 /* qr-reader-pocTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F31485C21CDBC1E500B21102 /* Build configuration list for PBXNativeTarget "qr-reader-pocTests" */;
-			buildPhases = (
-				9624DD4FAF3596A76F4D66A2 /* 📦 Check Pods Manifest.lock */,
-				F31485A71CDBC1E500B21102 /* Sources */,
-				F31485A81CDBC1E500B21102 /* Frameworks */,
-				F31485A91CDBC1E500B21102 /* Resources */,
-				9740761795D0EC1A1A47D6B2 /* 📦 Embed Pods Frameworks */,
-				EFF41095C38AEA4732C78F1C /* 📦 Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F31485AD1CDBC1E500B21102 /* PBXTargetDependency */,
-			);
-			name = "qr-reader-pocTests";
-			productName = "qr-reader-pocTests";
-			productReference = F31485AB1CDBC1E500B21102 /* qr-reader-pocTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F31485B51CDBC1E500B21102 /* qr-reader-pocUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F31485C51CDBC1E500B21102 /* Build configuration list for PBXNativeTarget "qr-reader-pocUITests" */;
-			buildPhases = (
-				8DB496D982CCEF00F90A5A5A /* 📦 Check Pods Manifest.lock */,
-				F31485B21CDBC1E500B21102 /* Sources */,
-				F31485B31CDBC1E500B21102 /* Frameworks */,
-				F31485B41CDBC1E500B21102 /* Resources */,
-				F981D13F4C05E5AC87503513 /* 📦 Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F31485B81CDBC1E500B21102 /* PBXTargetDependency */,
-			);
-			name = "qr-reader-pocUITests";
-			productName = "qr-reader-pocUITests";
-			productReference = F31485B61CDBC1E500B21102 /* qr-reader-pocUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,20 +165,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "my-community";
 				TargetAttributes = {
 					F31485961CDBC1E400B21102 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 8EJK967ME7;
-					};
-					F31485AA1CDBC1E500B21102 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = F31485961CDBC1E400B21102;
-					};
-					F31485B51CDBC1E500B21102 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = F31485961CDBC1E400B21102;
+						DevelopmentTeam = JKES54HFV4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -289,8 +189,6 @@
 			projectRoot = "";
 			targets = (
 				F31485961CDBC1E400B21102 /* qr-reader-poc */,
-				F31485AA1CDBC1E500B21102 /* qr-reader-pocTests */,
-				F31485B51CDBC1E500B21102 /* qr-reader-pocUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,20 +202,6 @@
 				F31485A21CDBC1E400B21102 /* Assets.xcassets in Resources */,
 				F3D4C16D1CFCE10600D7B5B4 /* beep.mp3 in Resources */,
 				F31485A01CDBC1E400B21102 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F31485A91CDBC1E500B21102 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F31485B41CDBC1E500B21102 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,81 +253,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8DB496D982CCEF00F90A5A5A /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9624DD4FAF3596A76F4D66A2 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9740761795D0EC1A1A47D6B2 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qr-reader-pocTests/Pods-qr-reader-pocTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFF41095C38AEA4732C78F1C /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qr-reader-pocTests/Pods-qr-reader-pocTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F981D13F4C05E5AC87503513 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qr-reader-pocUITests/Pods-qr-reader-pocUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -453,44 +262,12 @@
 			files = (
 				9D4DEDB31CDD176100D1996C /* SecondViewController.swift in Sources */,
 				F3D4C15C1CFC73DE00D7B5B4 /* UserProfileViewController.swift in Sources */,
-				F3D4C1601CFC749700D7B5B4 /* VideoCallViewController.swift in Sources */,
 				F314859D1CDBC1E400B21102 /* ViewController.swift in Sources */,
-				F3D4C1631CFC848700D7B5B4 /* qr-reader-poc-Bridging-Header.m in Sources */,
 				F314859B1CDBC1E400B21102 /* AppDelegate.swift in Sources */,
-				F3D4C15E1CFC744300D7B5B4 /* WebRTCService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F31485A71CDBC1E500B21102 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F31485B01CDBC1E500B21102 /* qr_reader_pocTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F31485B21CDBC1E500B21102 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F31485BB1CDBC1E500B21102 /* qr_reader_pocUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F31485AD1CDBC1E500B21102 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F31485961CDBC1E400B21102 /* qr-reader-poc */;
-			targetProxy = F31485AC1CDBC1E500B21102 /* PBXContainerItemProxy */;
-		};
-		F31485B81CDBC1E500B21102 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F31485961CDBC1E400B21102 /* qr-reader-poc */;
-			targetProxy = F31485B71CDBC1E500B21102 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F314859E1CDBC1E400B21102 /* Main.storyboard */ = {
@@ -526,8 +303,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -549,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -571,8 +350,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -588,9 +369,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -599,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B777118B253EAC70F0BDA9FE /* Pods-qr-reader-poc.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -607,11 +390,11 @@
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr.poc;
+				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr;
 				PRODUCT_NAME = myCommunity;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "qr-reader-poc/qr-reader-poc-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -620,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DC468C518D1881851F1C0ED /* Pods-qr-reader-poc.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -628,61 +412,11 @@
 				INFOPLIST_FILE = "qr-reader-poc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr.poc;
+				PRODUCT_BUNDLE_IDENTIFIER = mycommunity.qr;
 				PRODUCT_NAME = myCommunity;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "qr-reader-poc/qr-reader-poc-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F31485C31CDBC1E500B21102 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D6D7076D407E4204364AE7F /* Pods-qr-reader-pocTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "qr-reader-pocTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-reader-pocTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qr-reader-poc.app/qr-reader-poc";
-			};
-			name = Debug;
-		};
-		F31485C41CDBC1E500B21102 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4319BE859EA1FF7DB541E6F /* Pods-qr-reader-pocTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "qr-reader-pocTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-reader-pocTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qr-reader-poc.app/qr-reader-poc";
-			};
-			name = Release;
-		};
-		F31485C61CDBC1E500B21102 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71248B97FF1C79BC53E75D82 /* Pods-qr-reader-pocUITests.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "qr-reader-pocUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-reader-pocUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "qr-reader-poc";
-			};
-			name = Debug;
-		};
-		F31485C71CDBC1E500B21102 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51887DDBD0665EEC7A0D673C /* Pods-qr-reader-pocUITests.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "qr-reader-pocUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mycommunity.qr-reader-pocUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = "qr-reader-poc";
 			};
 			name = Release;
 		};
@@ -703,24 +437,6 @@
 			buildConfigurations = (
 				F31485C01CDBC1E500B21102 /* Debug */,
 				F31485C11CDBC1E500B21102 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F31485C21CDBC1E500B21102 /* Build configuration list for PBXNativeTarget "qr-reader-pocTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F31485C31CDBC1E500B21102 /* Debug */,
-				F31485C41CDBC1E500B21102 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F31485C51CDBC1E500B21102 /* Build configuration list for PBXNativeTarget "qr-reader-pocUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F31485C61CDBC1E500B21102 /* Debug */,
-				F31485C71CDBC1E500B21102 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

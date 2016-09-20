@@ -19,8 +19,8 @@ class UserProfileViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
   
-  @IBAction func back(sender: AnyObject) {
-    dismissViewControllerAnimated(true, completion: nil)
+  @IBAction func back(_ sender: AnyObject) {
+    dismiss(animated: true, completion: nil)
   }
   
   
