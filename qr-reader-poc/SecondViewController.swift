@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import AVFoundation
+import FirebaseDatabase
+import Firebase
 
 /*
  Nro Tramite
@@ -22,6 +24,10 @@ import AVFoundation
  */
 
 class SecondViewController: UIViewController {
+
+  // [START define_database_reference]
+  let ref = FIRDatabase.database().reference()
+  // [END define_database_reference]
  
   @IBOutlet weak var firstNameLabel: UILabel!
   @IBOutlet weak var lastNameLabel: UILabel!
@@ -29,7 +35,7 @@ class SecondViewController: UIViewController {
   @IBOutlet weak var documentLabel: UILabel!
   @IBOutlet weak var avatarImage: UIImageView!
   
-  var userData: [String] = ["", "Abait", "Esteban Sait", "F", "30650388"]
+  var userData: [String] = ["", "Lalo Lala", "Landa", "F", "31650388"]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -43,6 +49,11 @@ class SecondViewController: UIViewController {
     
     avatarImage.layer.borderWidth = 4
     avatarImage.layer.borderColor = UIColor.white.cgColor
+
+    self.ref.child("users/\(documentLabel.text!)/firstName").setValue(firstNameLabel.text!)
+    self.ref.child("users/\(documentLabel.text!)/lastName").setValue(lastNameLabel.text!)
+    self.ref.child("users/\(documentLabel.text!)/gender").setValue(genderLabel.text!)
+
   }
   
   override func didReceiveMemoryWarning() {

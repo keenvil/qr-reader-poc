@@ -8,6 +8,8 @@ target 'qr-reader-poc' do
   # Pods for qr-reader-poc
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
   pod 'Alamofire', '~> 4.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 end
 

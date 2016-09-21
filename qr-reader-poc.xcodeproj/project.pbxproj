@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		F31485A51CDBC1E400B21102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31485A31CDBC1E400B21102 /* LaunchScreen.storyboard */; };
 		F3D4C15C1CFC73DE00D7B5B4 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */; };
 		F3D4C16D1CFCE10600D7B5B4 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */; };
+		F3FBA8881D92EF1E00E6445A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3FBA8871D92EF1E00E6445A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F31485BC1CDBC1E500B21102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3D4C15B1CFC73DE00D7B5B4 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		F3FBA8871D92EF1E00E6445A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		F31485991CDBC1E400B21102 /* qr-reader-poc */ = {
 			isa = PBXGroup;
 			children = (
+				F3FBA8871D92EF1E00E6445A /* GoogleService-Info.plist */,
 				F3D4C16C1CFCE10600D7B5B4 /* beep.mp3 */,
 				F314859A1CDBC1E400B21102 /* AppDelegate.swift */,
 				F314859C1CDBC1E400B21102 /* ViewController.swift */,
@@ -176,7 +179,7 @@
 				};
 			};
 			buildConfigurationList = F31485921CDBC1E400B21102 /* Build configuration list for PBXProject "qr-reader-poc" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,6 +203,7 @@
 			files = (
 				F31485A51CDBC1E400B21102 /* LaunchScreen.storyboard in Resources */,
 				F31485A21CDBC1E400B21102 /* Assets.xcassets in Resources */,
+				F3FBA8881D92EF1E00E6445A /* GoogleService-Info.plist in Resources */,
 				F3D4C16D1CFCE10600D7B5B4 /* beep.mp3 in Resources */,
 				F31485A01CDBC1E400B21102 /* Main.storyboard in Resources */,
 			);
